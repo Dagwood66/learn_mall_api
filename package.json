@@ -17,6 +17,7 @@
   "devDependencies": {
     "cross-env": "^6.0.0",
     "env-cmd": "^10.0.1",
+    "express-swagger-generator": "^1.1.15",
     "supervisor": "^0.12.0"
   }
 }

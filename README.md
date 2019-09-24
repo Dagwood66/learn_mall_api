@@ -12,3 +12,5 @@
     env-cmd -e base,dev node --inspect-brk index.js
     热更新-断点调试接口 npm run debug     
     env-cmd -e base,dev supervisor --ignore node_modules node --inspect index.js
+##  接口文档
+    http://localhost:3000/api-docs
