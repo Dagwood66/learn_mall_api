@@ -1,6 +1,8 @@
 let express = require("express");
 let router = require("./routers/index");
 let expressSwaggerGenerator = require("express-swagger-generator");
+let bodyParser = require("body-parser");
+
 let app = express();
 let expressSwagger = expressSwaggerGenerator(app);
 let expressSwaggerOptions = {
@@ -31,6 +33,8 @@ let expressSwaggerOptions = {
 };
 
 app.use("/v1/api", express.static("public"));
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 
 router(app);
 

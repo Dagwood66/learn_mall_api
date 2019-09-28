@@ -9,5 +9,7 @@ module.exports = function (app) {
         });
     });
 
-    app.use(baseUrl("/test"),require("./test"))
+    app.use(baseUrl("/member"), require("./member"));
+
+    app.use(baseUrl("/test"), require("./test"))
 };
